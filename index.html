@@ -197,10 +197,10 @@
                     </p>
                     <p class="goal-status" :class="goalStatusClass">{{ goalStatusText }}</p>
                     
-                    <!-- <p v-if="progressPercent < 30 && !goalAchieved" class="encouragement start">🌟 Just started! Every minute counts.</p>
+                    <p v-if="progressPercent < 30 && !goalAchieved" class="encouragement start">🌟 Just started! Every minute counts.</p>
                     <p v-else-if="progressPercent < 70 && !goalAchieved" class="encouragement middle">💪 Great progress! Keep it up!</p>
                     <p v-else-if="progressPercent < 100 && !goalAchieved" class="encouragement almost">🎉 Almost there! Finish strong!</p>
-                    <p v-else class="encouragement done">🏆 Congratulations! Daily goal achieved!</p> -->
+                    <p v-else class="encouragement done">🏆 Congratulations! Daily goal achieved!</p>
                 </div>
                 
                 <div v-if="recentGoals.length > 0" class="recent-goals">
