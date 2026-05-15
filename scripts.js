@@ -590,19 +590,19 @@ function renderSeats() {
             const isCurrentUserSeat = (currentUser.isLoggedIn && seat.currentUser === currentUser.name);
             
             if (seat.status === "available") {
-                actionBtns = `<button class="btn-small book-action" data-region="${seat.regionId}" data-seatid="${seat.seatId}">Book</button>`;
+                actionBtns = `<button class="btn-small btn-available book-action" data-region="${seat.regionId}" data-seatid="${seat.seatId}">Book</button>`;
             } 
             else if (seat.status === "booked") {
                 if (isCurrentUserSeat) {
-                    actionBtns = `<button class="btn-small checkin-action" data-region="${seat.regionId}" data-seatid="${seat.seatId}">Check-in</button>
-                                  <button class="btn-small cancel-action" data-region="${seat.regionId}" data-seatid="${seat.seatId}">Cancel</button>`;
+                    actionBtns = `<button class="btn-small btn-checkin checkin-action" data-region="${seat.regionId}" data-seatid="${seat.seatId}">Check-in</button>
+                                <button class="btn-small btn-cancel cancel-action" data-region="${seat.regionId}" data-seatid="${seat.seatId}">Cancel</button>`;
                 } else {
                     actionBtns = `<span class="btn-disabled">Booked by ${seat.currentUser}</span>`;
                 }
             } 
             else if (seat.status === "in-use") {
                 if (isCurrentUserSeat) {
-                    actionBtns = `<button class="btn-small checkout-action" data-region="${seat.regionId}" data-seatid="${seat.seatId}">Check-out</button>`;
+                    actionBtns = `<button class="btn-small btn-checkout checkout-action" data-region="${seat.regionId}" data-seatid="${seat.seatId}">Check-out</button>`;
                     if (seat.checkinTime) {
                         const elapsed = Math.floor((Date.now() - seat.checkinTime) / 60000);
                         timerHtml = `<div class="timer-display" id="timer-${seat.regionId}-${seat.seatId}">⏱️ ${elapsed} min</div>`;
@@ -1146,7 +1146,7 @@ function showAchievementDetail(index) {
     } else {
         var remaining = ach.requiredHours - totalHours;
         var remainingFixed = remaining.toFixed(2);
-        showModal('🔒 ' + ach.name + ' (Locked)\n\nProgress: ' + Math.floor(totalHours) + ' / ' + ach.requiredHours + ' hours\n\n' + remainingFixed + ' more hours needed to unlock this achievement.\nKeep studying! 📚', false);
+        showModal('🔒 ' + ach.name + ' (Locked)\n\nProgress: ' + Math.floor(totalHours) + ' / ' + ach.requiredHours + ' hours\n\n' + remainingFixed + ' more hours needed to unlock this achievement.\nKeep studying!', false);
     }
 }
 
@@ -1198,7 +1198,6 @@ function init() {
                 });
             }
         });
-
     }
 
     loadBooks();
@@ -1220,8 +1219,8 @@ document.addEventListener('DOMContentLoaded', function() {
             goalCompleted: false,
             recentGoals: [],
             currentUserName: null,
-            goalStartTime: null, 
-            timerInterval: null 
+            goalStartTime: null,
+            timerInterval: null
         },
         computed: {
             progressPercent: function() {
@@ -1327,7 +1326,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.currentDailyGoal = goalValue;
                 this.currentProgress = 0;
                 this.goalCompleted = false;
-                this.isStudying = true;
+                this.isStudying = true; 
                 this.dailyGoal = 0;
                 this.goalStartTime = Date.now();
                 
@@ -1364,7 +1363,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
             },
-
             startStudy: function() {},
             pauseStudy: function() {},
             updateProgress: function() {},
@@ -1459,8 +1457,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-let allBooks = []; 
-let booksFiltered = []; 
+let allBooks = [];
+let booksFiltered = [];
 
 function loadBooks() {
     fetch('books.json')
