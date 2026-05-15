@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "name": "Postgraduate Exam",
+      "images": [
+        { "src": "images/4.webp", "caption": "English For Postgraduate Exam" , "description": "Comprehensive English review materials for postgraduate entrance exams, covering vocabulary, grammar, reading comprehension, and writing skills."},
+        { "src": "images/5.jpg", "caption": "Math For Postgraduate Exam" , "description": "Comprehensive math review materials for postgraduate entrance exams, covering algebra, geometry, and calculus."},
+        { "src": "images/6.webp", "caption": "Politics For Postgraduate Exam" , "description": "Comprehensive politics review materials for postgraduate entrance exams, covering current affairs, history, and political theory." }
+      ]
+    },
+    {
+      "name": "Final Sprint",
+      "images": [
+        { "src": "images/7.webp", "caption": "Medical Final Exam Review" , "description": "Comprehensive review materials for medical final exams." },
+        { "src": "images/8.webp", "caption": "Computer Final Exam Review" , "description": "Comprehensive review materials for computer final exams." },
+        { "src": "images/9.webp", "caption": "Automated Final Exam Review" , "description": "Comprehensive review materials for engineering final exams." }
+      ]
+    },
+    {
+      "name": "Career Planning",
+      "images": [
+        { "src": "images/10.jpg", "caption": "Programmer Career Planning" , "description": "To cultivate in programmers the ability to continuously learn, adapt and create value." },
+        { "src": "images/11.png", "caption": "Medical Student Career Planning" , "description": "Guidance and resources for medical students planning their careers." },
+        { "src": "images/12.png", "caption": "Teacher Career Planning" , "description": "Guidance and resources for teachers planning their careers." }
+      ]
+    },
+    {
+      "name": "Top-up Courses",
+      "images": [
+        { "src": "images/13.png", "caption": "Undergraduate Transfer English" , "description": "Comprehensive bachelor's upgrade materials." },
+        { "src": "images/14.png", "caption": "Undergraduate Conversion to Economics" , "description": "Comprehensive bachelor's upgrade materials." },
+        { "src": "images/15.png", "caption": "Bachelor's Degree Program in Art Design" , "description": "Comprehensive bachelor's upgrade materials." }
+      ]
+    },
+    {
+      "name": "Civil Service Exam",
+      "images": [
+        { "src": "images/16.png", "caption": "Civil Service Examination - Essay Writing Section" , "description": "Comprehensive civil service exam materials." },
+        { "src": "images/17.png", "caption": "Civil Service Examination - Quantitative Ability Test" , "description": "Comprehensive civil service exam materials." },
+        { "src": "images/18.png", "caption": "Civil Service Examination - The Complete System" , "description": "Comprehensive civil service exam materials." }
+      ]
+    },
+    {
+      "name": "CET-4/6",
+      "images": [
+        { "src": "images/19.png", "caption": "Writing and Translation for CET-4/6" , "description": "Comprehensive CET-4/6 review materials." },
+        { "src": "images/20.png", "caption": "Core Vocabulary for CET-4/6" , "description": "Comprehensive CET-4/6 review materials." },
+        { "src": "images/21.png", "caption": "Listening Tests for CET-4/6" , "description": "Comprehensive CET-4/6 review materials." }
+      ]
+    },
+    {
+      "name": "IELTS / TOEFL",
+      "images": [
+        { "src": "images/22.png", "caption": "IELTS Reading and Writing" , "description": "Comprehensive IELTS / TOEFL review materials." },
+        { "src": "images/23.png", "caption": "IELTS Speaking" , "description": "Comprehensive IELTS / TOEFL review materials." },
+        { "src": "images/24.png", "caption": "IELTS Examination Skills" , "description": "Comprehensive IELTS / TOEFL review materials." }
+      ]
+    }
+  ]
+}
